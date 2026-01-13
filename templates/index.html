@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-Commerce</title>
+</head>
+<body>
+
+<h1>Products</h1>
+
+<ul>
+{% for product in products %}
+    <li>
+        {{ product[1] }} - ₹{{ product[2] }}
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
